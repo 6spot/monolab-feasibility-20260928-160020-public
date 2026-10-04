@@ -1,2 +1,2 @@
 monos remote preparation synthetic kernel fixture
-first controlled synthetic result
+second controlled synthetic result
