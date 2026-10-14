@@ -39,3 +39,9 @@ the repository root with:
 ```
 python3 -m unittest discover -s monos_fresh_acceptance_20261014 -v
 ```
+
+Edge coverage includes empty and whitespace-only input, blank-line
+removal, Unicode non-breaking spaces (U+00A0, U+3000) mixed with tabs
+around line content, duplicates separated by blank lines, preservation
+of internal whitespace, mixed CRLF/LF and lone-CR line endings, and
+case-sensitive distinct values. The suite runs 13 tests, all passing.

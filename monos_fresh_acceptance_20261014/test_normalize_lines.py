@@ -65,6 +65,43 @@ class NormalizeLinesTestCase(unittest.TestCase):
             ["Foo", "foo", "FOO"],
         )
 
+    def test_unicode_nbsp_mixed_with_tabs_is_trimmed(self):
+        # U+00A0 (no-break space) and U+3000 (ideographic space) are
+        # Unicode whitespace that str.strip() removes.  Here they are
+        # mixed with tab characters around the line content.
+        self.assertEqual(
+            normalize_lines("\u00a0\talpha\t\u00a0\n  \u3000beta\u3000  "),
+            ["alpha", "beta"],
+        )
+        self.assertEqual(
+            normalize_lines("\t\u00a0\u3000\t\nalpha"),
+            ["alpha"],
+        )
+
+    def test_duplicates_separated_by_blank_lines_are_removed(self):
+        # Duplicates that are separated by blank lines still collapse to
+        # the first occurrence; blank lines never revive a duplicate.
+        self.assertEqual(
+            normalize_lines("alpha\n\n  \nalpha\n\t\nbeta\nalpha"),
+            ["alpha", "beta"],
+        )
+        self.assertEqual(
+            normalize_lines("gamma\r\n\r\ngamma\n\n\ndelta\r\ndelta"),
+            ["gamma", "delta"],
+        )
+
+    def test_internal_whitespace_is_preserved(self):
+        # Only surrounding whitespace is trimmed; runs of whitespace
+        # inside a line are kept exactly as written.
+        self.assertEqual(
+            normalize_lines("alpha   beta\n\tgamma  delta\t"),
+            ["alpha   beta", "gamma  delta"],
+        )
+        self.assertEqual(
+            normalize_lines("  one\ttwo  three  "),
+            ["one\ttwo  three"],
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
