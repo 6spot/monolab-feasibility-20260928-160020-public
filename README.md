@@ -19,3 +19,7 @@ library (`unittest`). Run them from the repository root with:
 ```
 python3 -m unittest discover -s tests -v
 ```
+
+## Monos fresh cancellation acceptance 20261014
+
+cancellation fixture only: not merged.
