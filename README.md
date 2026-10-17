@@ -1,3 +1,7 @@
+## Monos incremental delivery acceptance 20261014
+
+incremental phase one: pending verification fixture.
+
 # monolab-feasibility-20260928-160020-public
 Synthetic MonoLab provider feasibility fixture; no product source.
 
@@ -19,8 +23,3 @@ library (`unittest`). Run them from the repository root with:
 ```
 python3 -m unittest discover -s tests -v
 ```
-
-
-## Monos incremental delivery acceptance 20261014
-
-incremental phase one: pending verification fixture.
