@@ -1,6 +1,7 @@
 ## Monos incremental delivery acceptance 20261014
 
 incremental phase one: pending verification fixture.
+incremental phase two: accepted cancellation fixture.
 
 # monolab-feasibility-20260928-160020-public
 Synthetic MonoLab provider feasibility fixture; no product source.
