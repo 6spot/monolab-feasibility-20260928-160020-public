@@ -1,3 +1,4 @@
+monos Codex Luna Git workspace fixture 20261017.
 # monolab-feasibility-20260928-160020-public
 Synthetic MonoLab provider feasibility fixture; no product source.
 
