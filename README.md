@@ -1,3 +1,6 @@
+## Codex safe capture clean-merge acceptance 20261018
+Exact captured stdout; fixture only.
+
 # monolab-feasibility-20260928-160020-public
 Synthetic MonoLab provider feasibility fixture; no product source.
 
