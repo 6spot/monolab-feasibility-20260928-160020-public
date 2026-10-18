@@ -1,3 +1,6 @@
+## Codex bounded native continuation acceptance 20261018
+Checkpoint retained across native failure; fixture only.
+
 # monolab-feasibility-20260928-160020-public
 Synthetic MonoLab provider feasibility fixture; no product source.
 
