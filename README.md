@@ -1,3 +1,6 @@
+## Codex single-target exhaustion acceptance 20261018
+Checkpoint retained for explicit Owner Retry; fixture only.
+
 # monolab-feasibility-20260928-160020-public
 Synthetic MonoLab provider feasibility fixture; no product source.
 
