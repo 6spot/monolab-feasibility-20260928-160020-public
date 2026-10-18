@@ -1,3 +1,4 @@
+monos Codex owner Stop fixture 20261018.
 # monolab-feasibility-20260928-160020-public
 Synthetic MonoLab provider feasibility fixture; no product source.
 
