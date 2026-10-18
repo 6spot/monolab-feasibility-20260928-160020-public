@@ -19,3 +19,6 @@ library (`unittest`). Run them from the repository root with:
 ```
 python3 -m unittest discover -s tests -v
 ```
+
+## Codex safe lazy-open acceptance 20261018
+Exact captured stdout; fixture only.
